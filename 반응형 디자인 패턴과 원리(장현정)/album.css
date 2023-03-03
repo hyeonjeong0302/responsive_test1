@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header */
+header {
+  width: 100%;
+}
+
+header .logo {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  background: yellowgreen;
+  line-height: 50px;
+  overflow: hidden;
+}
+
+header .logo p {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+header .back {
+  position: absolute;
+  line-height: 50px;
+  top: 0;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+header .back i {
+  color: white;
+}
+
+/* search */
+.search_ex {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  background-color: lightgray;
+  margin: 0 auto;
+}
+
+.search_ex .search {
+  position: relative;
+}
+
+.search_ex .search .search_inner {
+  position: relative;
+}
+
+.search_ex .search .search_inner input {
+  width: 95%;
+  margin: 10px 10px;
+  float: left;
+  height: 30px;
+  border-style: none;
+  border-radius: 8px;
+  color: lightgray;
+}
+
+.search_ex .search .search_inner i {
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  color: lightgray;
+
+}
+
+.search_ex .search>i {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  color: lightgray;
+}
+
+/* album */
+.album {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.album .day {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.album .day p {
+  display: block;
+  font-size: 11px;
+  color: gray;
+  margin: 10px 0 5px 5px;
+  overflow: hidden;
+}
+
+.album .day i {
+  position: absolute;
+  right: 10px;
+  color: gray;
+  top: 10px;
+}
+
+.album .day div {
+  width: 25%;
+  height: 100px;margin-bottom: 2px;
+  float: left;
+}
+
+.album .day div img {
+  width: 100px;
+  height: 100px;
+}
+
+/* footer */
+footer.lnb {
+  background-color: lightgray;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+footer.lnb ul {}
+
+footer.lnb ul li a {
+  width: 25%;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+
+@media only screen and (min-width:321px) and (orientation:landscape) {
+  .search_ex .search>i {
+    top: 0x;
+    right: 45px;   
+  }
+  .album .day div {
+    width: 100px;
+    float: left;
+  }
+}
